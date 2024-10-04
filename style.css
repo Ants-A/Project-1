@@ -16,6 +16,15 @@
     right: 20%;
 }
 
+.amount
+{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
 .currency_conv
 {
     position: absolute;
@@ -26,11 +35,24 @@
     border-style: solid;
     border-width: 3px;
     font-size: 30;
+    background-color: white;
 }
 
-.button
+body
+{
+    background-color: lightgray;
+}
+
+.last_upt
 {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    bottom: 5%;
+    left: 5%;
+}
+
+.next_upt
+{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
 }

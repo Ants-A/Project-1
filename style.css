@@ -1,0 +1,36 @@
+.conversion_title
+{
+    text-align: center;
+    margin-top: 69px;
+}
+
+.currency_start
+{
+    position: absolute;
+    left: 20%;
+}
+
+.currency_end
+{
+    position: absolute;
+    right: 20%;
+}
+
+.currency_conv
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    font-size: 30;
+}
+
+.button
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

@@ -1,0 +1,39 @@
+
+<body>
+    <div>
+        <h1 class="conversion_title">Currency exchange rates</h1>
+    </div>
+    
+    <div>
+        <input 
+        class= "currency_start" 
+        type="text" 
+        placeholder="Choose currency"
+        />
+        <input 
+        class= "currency_end" 
+        type="text"
+        placeholder="Choose currency"
+        />
+    </div>
+
+    <div>
+        <button
+        type="button"
+        placeholder="Convert"
+        class="button"
+        onclick="download(convert_end, convert_start)"
+        >
+        Convert
+        </button>
+    </div>
+    
+    <div class="completion">
+        <p class="currency_conv">
+        </p>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+
+

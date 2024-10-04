@@ -8,6 +8,7 @@ currency_start.addEventListener('keydown', function(event)
     {
         convert_start = event.target.value;
         console.log(convert_start) 
+        download()
     }
 });
 
@@ -18,11 +19,9 @@ currency_end.addEventListener('keydown', function(event)
     {
         convert_end = event.target.value;
         console.log(convert_end)   
+        download()
     }
 });
-
-console.log(convert_end)  
-console.log(convert_start) 
 
 
 async function download() 
@@ -34,14 +33,15 @@ async function download()
     let converted;
     console.log(convert_end)  
     console.log(convert_start) 
-    if (data[convert_end] == 1)
+    if (data.rates[convert_end] == 1)
     {
-        converted = data[convert_end] / data[convert_start];
+        converted = data.rates[convert_end] / data.rates[convert_start];
     }
     else
     {
-        converted = data[convert_start] / data[convert_end];
+        converted = data.rates[convert_start] / data.rates[convert_end];
     }
+    console.log(data.rates[convert_start])
 
-    element.innerHTML = "<p>" + data[convert_start] + " ==> " + converted + "</p>";
+    element.innerHTML = "<p>" + data.rates[convert_start] + " ==> " + converted + "</p>";
 }

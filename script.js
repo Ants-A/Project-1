@@ -41,7 +41,7 @@ async function download()
     const data = await response.json();
     const element = document.querySelector(".currency_conv");
 
-    const converted = data.rates[convert_end] / data.rates[convert_start];
+    const converted = data.rates[convert_end.toUpperCase()] / data.rates[convert_start.toUpperCase()];
     const conv_money = money * converted;
     
     if (convert_start != undefined && convert_end != undefined
